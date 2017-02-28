@@ -1,3 +1,12 @@
 <h1>
   {{title}}
 </h1>
+
+<div class="tasks">
+  <div
+    *ngFor="let task of tasks"
+    class="task"
+  >
+    <span class="task-id">{{task.id}} - </span> {{task.name}}
+  </div>
+</div>
