@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TASKS } from '../data/tasks';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,4 @@ import { TASKS } from '../data/tasks';
 })
 export class AppComponent {
   title = 'Task List:';
-  tasks = TASKS;
 }
