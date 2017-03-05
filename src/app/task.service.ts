@@ -6,11 +6,16 @@ import { TASKS } from "../data/TASKS";
 export class TaskService {
   tasks: Task[] = [];
 
-  constructor() { }
+  constructor() {
+    this.tasks = TASKS;
+  }
 
   getTasks(): Task[] {
-    this.tasks = TASKS;
     return this.tasks;
+  }
+
+  getTask(id: number): Task {
+    return this.tasks[id];
   }
 
   addTask(taskName: string): void {

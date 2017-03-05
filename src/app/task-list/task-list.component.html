@@ -1,8 +1,8 @@
 <div class="tasks">
   <div
-    *ngFor="let task of tasks"
+    *ngFor="let task of tasks; let listIndex = index"
     class="task"
   >
-    <span class="task-id">{{task.id}} - </span> {{task.name}}
+    <span class="task-id">{{task.id}} - </span> <a [routerLink]="['/task', listIndex]">{{task.name}}</a>
   </div>
 </div>
