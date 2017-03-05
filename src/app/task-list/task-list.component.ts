@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
-import { TASKS } from "../../data/tasks";
+import { TASKS } from "../../data/TASKS";
 
 @Component({
   selector: 'app-task-list',
