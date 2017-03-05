@@ -4,5 +4,6 @@
     class="task"
   >
     <span class="task-id">{{task.id}} - </span> <a [routerLink]="['/task', listIndex]">{{task.name}}</a>
+    <button class="delete-task" (click)="deleteTask(listIndex)">x</button>
   </div>
 </div>

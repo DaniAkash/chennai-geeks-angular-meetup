@@ -22,8 +22,7 @@ export class TaskService {
     this.tasks.push({id: this.tasks.length+1, name: taskName, priority: 'High'});
   }
 
-  deleteTask(id: number): Task[] {
-    this.tasks = this.tasks.filter(task => task.id !== id);
-    return this.tasks;
+  deleteTask(index: number): void {
+    this.tasks.splice(index, 1);
   }
 }
