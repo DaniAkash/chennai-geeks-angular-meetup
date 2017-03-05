@@ -1,10 +1,10 @@
-import { ProfilePagePage } from './app.po';
+import { Tasks } from './app.po';
 
-describe('profile-page App', () => {
-  let page: ProfilePagePage;
+describe('tasks App', () => {
+  let page: Tasks;
 
   beforeEach(() => {
-    page = new ProfilePagePage();
+    page = new Tasks();
   });
 
   it('should display message saying app works', () => {
