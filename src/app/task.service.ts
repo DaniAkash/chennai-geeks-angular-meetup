@@ -13,9 +13,8 @@ export class TaskService {
     return this.tasks;
   }
 
-  addTask(task: Task): Task[] {
-    this.tasks.push(task);
-    return this.tasks;
+  addTask(taskName: string): void {
+    this.tasks.push({id: this.tasks.length+1, name: taskName, priority: 'High'});
   }
 
   deleteTask(id: number): Task[] {

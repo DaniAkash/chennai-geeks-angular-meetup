@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { TASKS } from "../../data/TASKS";
+import {Task} from "../../dataTypes/Task";
+import {TaskService} from "../task.service";
 
 @Component({
   selector: 'app-task-list',
@@ -9,13 +11,15 @@ import { TASKS } from "../../data/TASKS";
 })
 export class TaskListComponent implements OnInit {
 
-  tasks = TASKS;
+  tasks:Task[] = [];
 
   constructor(
-    private router: Router
+    private router: Router,
+    private taskService: TaskService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.tasks = this.taskService.getTasks();
   }
 
 }

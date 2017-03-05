@@ -8,12 +8,14 @@ import { TaskDetailsComponent } from './task-details/task-details.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { AppRoutingModule } from "./app-routing/app-routing.module";
 import { TaskService } from "./task.service";
+import { AddTaskComponent } from './add-task/add-task.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskDetailsComponent,
-    TaskListComponent
+    TaskListComponent,
+    AddTaskComponent
   ],
   imports: [
     AppRoutingModule,
